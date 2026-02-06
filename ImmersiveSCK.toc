@@ -4,7 +4,7 @@
 ## Author: Seiryoku
 ## Version: 1.0.0
 ## X-Curse-Project-ID: 1455494
-## OptionalDeps: Ace3
+## Dependencies: Ace3
 ## SavedVariables: ISCKDB
 
 Init.lua
