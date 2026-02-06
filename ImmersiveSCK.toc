@@ -1,0 +1,11 @@
+## Interface: 120000
+## Title: Immersive SCK
+## Notes: Creates a more realistic experience when casting Spinning Crane Kick.
+## Author: Seiryoku
+## Version: 1.0.0
+## X-Curse-Project-ID: 1455494
+## OptionalDeps: Ace3
+## SavedVariables: ISCKDB
+
+Init.lua
+Camera.lua
