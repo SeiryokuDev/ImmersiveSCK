@@ -15,7 +15,7 @@ function ISCK:StartSpinning(_, unit, _, spellID)
 end
 
 function ISCK:StopSpinning(_, unit, _, spellID)
-    if unit == "player" and spellID == 322729 or spellID == 101546 then
+    if unit == "player" and (spellID == 322729 or spellID == 101546) then
         if self.spinning then
             self:StopCamera()
         end
