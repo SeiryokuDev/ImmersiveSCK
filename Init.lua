@@ -23,6 +23,10 @@ function ISCK:OnInitialize()
     self.config = self.db.global
 
     self:RegisterChatCommand("isck", "HandleSlash")
+
+    if not self.config.enabled then
+        self:Disable()
+    end
 end
 
 function ISCK:HandleSlash()
@@ -30,10 +34,6 @@ function ISCK:HandleSlash()
 end
 
 function ISCK:OnEnable()
-    if not self.config.enabled then
-        return
-    end
-
     self:RegisterEvent("UNIT_SPELLCAST_CHANNEL_START", "StartSpinning")
     self:RegisterEvent("UNIT_SPELLCAST_CHANNEL_STOP", "StopSpinning")
 end
